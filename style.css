@@ -1,0 +1,515 @@
+*{
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+   width: 100%;
+    background: white;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background: white;
+    box-shadow: 0 1px 4px rgb(146 161 176  15%);
+}
+
+.logo img{
+    width: 100%;
+    height: 65px;
+}
+.carousel-item span{
+    color: yellow;
+   
+}
+
+.navbar-menu ul li{
+    list-style-type: none;
+    padding: 10px 20px;
+    display: inline-block;
+    align-items: space-between;
+    align-items: center;
+}
+.navbar-menu a{
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+}
+.navbar-menu a:hover{
+    color: rgb(239, 239, 0);
+    transform: 0.3s;
+}
+.navbar-menu ul{
+    align-items: right;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+/*hamburger-menu*/
+.hamburger{
+    position: relative;
+    display: block;
+    width: 30px;
+  
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+.hamburger .bar .hamburger:after, .hamburger :before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(85, 85, 85) ;
+    margin: 6px 0px;
+    border-radius: 5px;
+}
+.hamburger.is-active::before{
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+.hamburger.is-active::after{
+    transform: rotate(45deg) translate(-9px, 8px);
+}
+.hamburger.is-active  .bar{
+    opacity: 0;
+}
+
+
+
+/*carrousel*/
+.carrousel-inner{
+    margin-top: 65px;
+}
+.screen{
+    height: 780px;
+    width: 100%;
+    background: black;
+    opacity: 0.5;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 650px;
+    
+}
+.carousel-slide{
+    padding-top: 65px;
+}
+
+button .carousel-control-prev-icon{
+    width: 150px;
+    height: 150px;
+}
+button .carousel-control-next-icon{
+    width: 130px;
+    height: 130px;
+}
+.carousel-item h1{
+
+    display: inline-block;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 770;
+    font-size: 65px;
+}
+.carousel-item p{
+    font-family: 'Montserrat', sans-serif;
+}
+.h1{
+    display: inline-block;
+}
+h1 .shar{
+    color: yellow;
+}
+.carousel-item p{
+    padding-bottom: 100px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 780px;
+    background-color: rgba(0,0,0,0.55) ;
+}
+.carousel-control-next-icon {
+    background-image: url(image/swiperright.jpg);
+}
+.carousel-control-prev-icon {
+    background-image: url(image/swiperleft.jpg) !;
+}
+/*medee medeelel*/
+.medee-medeelel{
+    height: 100px;
+    
+    position: relative;
+}
+.medee-medeelel h1{
+    padding-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(85, 85, 85);
+    text-align: center;
+}
+.medee-medeelel h1 span::before{
+    content: "";
+    position: absolute;
+    background-color: yellow;
+    z-index: -1;
+    width: 265px;
+    height: 10px;
+    top: 55px;
+}
+
+
+.underline2{
+    width: 100%;
+    height: 5px;
+    background: rgb(85, 85, 85);
+    position: relative;
+}
+
+/*card*/
+.slide-container{
+    
+    width: 100%;
+    background-color: white;
+    padding: 50px 0;
+    align-items: center;
+    justify-content: center;
+    background-color:white;
+}
+.image-content{
+    position: relative;
+    width: 300px;
+}
+.slide-content{
+    margin: 0px;
+    margin-left: 200px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgb(146 161 176  15%);
+}
+.overlay2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: yellow;
+}
+.card{
+    border-radius: 10px;
+    background-color: white;
+    width: 300px !important;
+    box-shadow: 0 1px 4px rgb(146 161 176  35%);
+}
+
+
+.card .card-content{ 
+    display: flex;
+    flex-direction: column ;
+    padding: 10px 14px;
+    align-items: center;
+ 
+}
+.card-content p{
+    font-family: 'Montserrat', sans-serif;
+}
+.card-content h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(85, 85, 85);
+   
+}
+.card-content p{
+    font-family: "montserat". sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+.card-image{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    border-radius: 100px;
+}
+
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.underline3{
+    width: 200px;
+    height: 12px;
+    background: yellow;
+    position: relative;
+    bottom: -300px;
+    border-radius: 20px;
+}
+.button{
+    border: none;
+    background-color: yellow;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+.button:hover{
+    background: rgba(85, 85, 85);
+    color: white;
+    border: none;
+    
+}
+
+.swiper-button-next:after, .swiper-button-prev:after{
+    color: yellow;
+    height: 150px;
+    width: 150px;
+}
+.swiper-pagination-bullet {
+    color: yellow;
+}
+.swiper-slide{
+   
+}
+
+/*Footer2*/
+.footer2{
+    height: 30px;
+    width: 100%;
+    background: yellow;
+    align-items: center;
+    text-align: center;
+}
+.footer2 a{
+    color: rgba(85, 85, 85);
+    text-decoration: none;
+    font-size: 12px;
+    padding-top: 1px;
+    font-weight: 520;
+}
+.footer2 a:hover{
+    color: aliceblue;
+    transform: 0.3s;
+}
+
+/*footer-garchig*/
+.contac-us h3{
+    font-size: 24px;
+    font-weight: 520;
+    color: white;
+    
+   
+    width: 200px;
+    height: 30px;
+    
+    border-radius: 50px;
+    text-align: center;
+}
+.contac-us{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    padding-top: 5px;
+}
+.footer-garchig{
+    align-items: center;
+}
+.footer .teen h1{
+    font-weight: 700 !important;
+    color: white !important;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+/*Түншүүд*/
+
+.tunshuud h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(85, 85, 85);
+}
+.tunshuud{
+    text-align: center;
+    width: 100%;
+    height: 200px;
+}
+.tunshuud .swiper-slide img{
+    width: 100%;
+    height: 120px;
+}
+.tunshuud .swiper-slide{
+    align-items: center;
+    margin-top: 30px;
+}
+.tunshuud h1 span::before{
+    bottom: -917px;
+    content: "";
+    position: absolute;
+    background-color: yellow;
+    z-index: -1;
+    width: 240px;
+    height: 15px;
+    border-radius: 20px;
+}
+.tunshuud .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .tunshuud .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .tunshuud .swiper-slide img {
+    height: 100px;
+    object-fit: contain;
+    width: 250px;
+    padding-bottom: 20px;
+}
+  
+
+
+
+
+/*footer*/
+.footer{
+    width: 100%;
+    height: 300px;
+    background: rgba(85, 85, 85);
+}
+form input{
+    outline: none;
+    border-color: yellow;
+    background: none;
+    border-radius: 5px;
+    width: 350px;
+    height: 30px;
+    text-emphasis-color: white;
+    text-align: 0 1px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.sanal{
+    height: 100px !important;
+}
+.social-media{
+    color: yellow;
+    text-decoration: none;
+    align-items: center;
+    padding-top: 45px;
+    padding-left: 295px;
+}
+.social-media a{
+    text-decoration: none;
+    color: yellow;
+    font-weight: 600;
+}
+.social-media a:hover{
+    color: aliceblue;
+    transform: 0.3s;
+}
+.facebook{
+    padding-bottom: 10px;
+}
+
+/*responsive*/
+@media only screen and (max-width: 600px){
+    .carousel-item.active{
+        height: 200px;
+    }
+    .screen{
+        height: 200px;
+    }
+    .overlay{
+        height: 200px;
+    }
+    .medee-medeelel h1{
+        font-size: 30px;
+        padding-top: 50px;
+    }
+    .slide-content{
+        margin-left: 0;
+    }
+    .underline2{
+        width: 40%;
+    }
+    .medee-medeelel h1 span::before{
+        content: "";
+        position: absolute;
+        background-color: yellow;
+        z-index: -1;
+        width: 120px;
+        height: 10px;
+        top: 70px;
+    }
+    .footer{
+        height: 442px;
+    }
+    .social-media {
+        color: yellow;
+        text-decoration: none;
+        align-items: center;
+        padding-top: 30px;
+        padding-left: 13px;
+    }
+    .row>*{
+        margin-left: 35px;
+    }
+    .contac-us{
+        margin-left: 67px;
+    }
+    .footer2 {
+        height: 48px;
+    }
+    .footer2 a{
+        font-size: 10px;
+    } 
+    .tunshuud h1 span::before {
+        bottom: -192px;
+        content: "";
+        position: absolute;
+        background-color: yellow;
+        z-index: -1;
+        width: 240px;
+        height: 15px;
+}
